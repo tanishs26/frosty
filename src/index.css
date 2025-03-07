@@ -26,10 +26,7 @@
     font-optical-sizing: auto;
     background: #030014;
   }
-  .kit-img {
-    margin-top: 0;
-    padding: 0;
-  }
+
   h1 {
     @apply mx-auto max-w-4xl text-center text-5xl font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
   }
@@ -55,7 +52,6 @@
   .pattern {
     @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
     max-width: 100%;
-    padding: 0;
   }
 
   .wrapper {
@@ -64,32 +60,22 @@
 
   .trending {
     @apply mt-20;
-
+align-self: center;
     & ul {
       @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
     }
 
     & ul li {
       @apply min-w-[230px] flex flex-row items-center;
-      
     }
-    & ul li:hover {
-      cursor: pointer;
-      scale: 1.1;
-      transition:200ms ease-in-out
-
-    }
-    
 
     & ul li p {
       @apply fancy-text mt-[22px] text-nowrap;
     }
 
     & ul li img {
-      @apply w-[127px] h-[163px] rounded-lg object-cover -ml-3.5;
+      @apply mt-[30px] w-[180px] h-[200px] rounded-lg object-cover -ml-3.5;
     }
-    align-self: center;
-    scale: 1.2;
   }
 
   .search {
@@ -165,11 +151,6 @@
   -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
   font-size: 190px;
   font-family: "Bebas Neue", sans-serif;
-}
-footer {
-  background-color: rgba(37, 46, 78, 0.357);
-  border: none;
-  padding: 1rem 4rem;
 }
 
 @utility hide-scrollbar {
