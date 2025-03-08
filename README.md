@@ -1,12 +1,61 @@
-# React + Vite
+# Frosty - Movie Search App 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Frosty Preview](https://frosty-roan.vercel.app/preview.png) <!-- Add a preview image if available -->
 
-Currently, two official plugins are available:
+Frosty is a modern movie search application built with **React.js**, **Node.js**, **Tailwind CSS**, and **Appwrite**. It allows users to search for movies across the web, tracks real-time searches, and displays trending movies based on user activity. The app is hosted on **Vercel** and provides a seamless user experience with features like debounced search, loading states, and error handling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+=> **Live Preview**: [https://frosty-roan.vercel.app](https://frosty-roan.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features ✨
+
+- **Movie Search**: Search for movies using a debounced input to reduce API calls.
+- **Realtime Search Tracking**: Tracks user searches in real-time using **Appwrite**.
+- **Trending Movies**: Displays trending movies based on the most frequent searches.
+- **Responsive Design**: Built with **Tailwind CSS** for a sleek and responsive UI.
+- **Loading States**: Displays loading spinners while fetching data.
+- **Error Handling**: Shows user-friendly error messages for failed API requests.
+- **Rate Limiting**: Prevents abuse of the movie search API.
+
+---
+
+## Tech Stack 🛠️
+
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Backend-as-a-Service**: Appwrite (for real-time database and search tracking)
+- **Hosting**: Vercel (frontend and backend)
+- **APIs**: TMDb (The Movie Database)
+
+---
+
+## How It Works 🚀
+
+1. **User Searches for a Movie**:
+   - The frontend sends the search query to the backend.
+   - The backend fetches movie data from the TMDb API.
+
+2. **Track Searches in Real-Time**:
+   - The backend stores the search query in **Appwrite’s database**.
+   - Appwrite’s real-time capabilities update the trending movies list instantly.
+
+3. **Display Trending Movies**:
+   - The frontend fetches trending movies from Appwrite and displays them.
+
+---
+
+## Installation 🛠️
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Appwrite account (for backend)
+- TMDb API key
+
+### Steps
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/frosty.git
+   cd frosty
