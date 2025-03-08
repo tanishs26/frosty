@@ -15,6 +15,28 @@ const API_OPTIONS = {
   },
 };
 
+const Footer = () => {
+  return (
+    <footer className="bg-black text-white py-6 mt-10">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">
+          For educational purpose by {" "}
+          <a
+            href="https://github.com/tanishs26"
+            target="_blank"
+            rel="noopener noreferrer"
+            className='text-gradient'
+          >
+            Tanish Sharma
+          </a>
+        </p>
+        <p className="text-xs mt-2 text-gray-400">
+          &copy; {new Date().getFullYear()} Frosty. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
 const App = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [search, setSearchResult] = useState("");
@@ -110,7 +132,9 @@ const App = () => {
         </section>
       </div>
 
-     
+      <footer>
+        <Footer />
+      </footer>
     </main>
   );
 };

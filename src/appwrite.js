@@ -43,7 +43,7 @@ export const trending = async () => {
     const result = await database.listDocuments(
       VITE_DB_ID,
       VITE_COLLECTOIN_ID,
-      [Query.limit(5), Query.orderDesc("count")]
+      [Query.limit(6), Query.orderDesc("count")]
     );
     return result.documents;
   } catch (e) {
