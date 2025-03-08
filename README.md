@@ -1,6 +1,4 @@
-# Frosty - Movie Search App 🎬
-
-![Frosty Preview](https://frosty-roan.vercel.app/preview.png) <!-- Add a preview image if available -->
+# Frosty - A Movie Search App 
 
 Frosty is a modern movie search application built with **React.js**, **Node.js**, **Tailwind CSS**, and **Appwrite**. It allows users to search for movies across the web, tracks real-time searches, and displays trending movies based on user activity. The app is hosted on **Vercel** and provides a seamless user experience with features like debounced search, loading states, and error handling.
 
@@ -8,7 +6,7 @@ Frosty is a modern movie search application built with **React.js**, **Node.js**
 
 ---
 
-## Features ✨
+## Features :
 
 - **Movie Search**: Search for movies using a debounced input to reduce API calls.
 - **Realtime Search Tracking**: Tracks user searches in real-time using **Appwrite**.
@@ -20,7 +18,7 @@ Frosty is a modern movie search application built with **React.js**, **Node.js**
 
 ---
 
-## Tech Stack 🛠️
+## Tech Stack :
 
 - **Frontend**: React.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
@@ -30,7 +28,7 @@ Frosty is a modern movie search application built with **React.js**, **Node.js**
 
 ---
 
-## How It Works 🚀
+## How It Works 
 
 1. **User Searches for a Movie**:
    - The frontend sends the search query to the backend.
@@ -45,7 +43,7 @@ Frosty is a modern movie search application built with **React.js**, **Node.js**
 
 ---
 
-## Installation 🛠️
+## Installation 
 
 ### Prerequisites
 - Node.js (v16 or higher)
