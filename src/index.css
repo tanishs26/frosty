@@ -59,9 +59,9 @@
   }
 
   .trending {
-    @apply mt-20;
+    @apply mt-[30px];
     & ul {
-      @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
+      @apply mt-[25px] flex flex-row overflow-y-auto gap-5  w-full hide-scrollbar;
     }
 
     & ul li {
@@ -73,7 +73,7 @@
     }
 
     & ul li img {
-      @apply mt-[30px] w-[180px] h-[200px] rounded-lg object-cover -ml-3.5;
+      @apply mt-[30px] w-[180px] h-[240px] rounded-lg object-cover -ml-3.5;
     }
   }
 
